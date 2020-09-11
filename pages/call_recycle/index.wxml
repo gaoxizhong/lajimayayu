@@ -1,0 +1,52 @@
+<view class="list-box">
+  <view class="name-title" bindtap="logintest">姓名：</view>
+  <input value="{{name}}" placeholder="请输入姓名" bindinput="input_name"></input>
+</view>
+<view class="list-box" bindtap="logintest">
+  <view class="name-title">电话：</view>
+  <input value="{{mobile}}" placeholder="请输入电话" bindinput="input_mobile"></input>
+</view>
+<view class="list-box" bindtap="logintest">
+  <view class="name-title">地址：</view>
+  <input placeholder='例：**街道**小区**号楼**室' fixed="true" name="address" value="{{address}}" bindinput="input_address"></input>
+</view>
+<view class="list-box" bindtap="logintest">
+  <view class="name-title">预约时间：</view>
+  <picker 
+  style='color:{{startDate == "请选择" ? "#b2b2b2":""}};' 
+  disabled="{{!member_id}}" 
+  class='time-picker' 
+  mode="multiSelector" 
+  bindchange="bindStartMultiPickerChange" 
+  bindtap='pickerTap' 
+  bindcolumnchange="bindMultiPickerColumnChange" 
+  value="{{multiIndex}}" 
+  range="{{multiArray}}"
+  >
+  {{startDate}}
+  </picker>
+</view>
+
+
+<view class="list-box list-way" bindtap="logintest">
+  <view class="name-title">兑换方式</view>
+  <view class="right-way"> 
+    <block wx:for="{{waylist}}" wx:key="index">
+      <view class="{{ means == item.id? 'selected-list' :'' }}" data-id='{{item.id}}' bindtap="sele_way">{{item.name}}</view>
+    </block>
+  </view>
+</view>
+
+<view class="list-box list-way" bindtap="logintest">
+  <view class="name-title">回收类型</view>
+  <view class="right-way"> 
+    <block wx:for="{{typelist}}" wx:key="index">
+      <view class="{{ item.seled == true ? 'selected-list' :'' }}" data-index='{{index}}' data-id='{{item.id}}' bindtap="sele_type">{{item.name}}</view>
+    </block>
+  </view>
+</view>
+
+<view style="width；100%；height:140rpx;"></view>
+<view class="submit-box">
+  <view class="submit-btn" bindtap="submit_btn">确认提交</view>
+</view>

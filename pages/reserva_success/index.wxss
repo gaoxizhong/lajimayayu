@@ -1,0 +1,40 @@
+.image-box{
+  padding: 130rpx 0 46rpx 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image-box>image{
+  width: 422rpx;
+  height: auto;
+}
+.gotobtn{
+  padding: 20rpx 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 84rpx;
+}
+.gotobtn>view{
+  width: 46%;
+  height: 78rpx;
+  line-height: 78rpx;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 30rpx;
+}
+.gotohome{
+  background: #00E2CE;
+}
+.gotooder{
+  background: #ff0000;
+}
+.description{
+  font-size: 26rpx;
+  color: #444;
+  text-align: center;
+  margin-top: 30rpx;
+}

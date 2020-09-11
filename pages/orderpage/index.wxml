@@ -1,0 +1,65 @@
+<view class="address-info-bg">
+  <view class="address-info" wx:if="{{address_info}}">
+    <view>
+      <view class="info-name">{{name}}</view>
+      <view class="info-icon">默认</view>
+    </view>
+    <view class="info-right">
+      <view class="info-ph-box">
+        <view class="info-ph"> {{mobile}} </view>
+        <view class="info-edit">
+          <image src="/images/edit.png"></image>
+          <text style="padding-left:8rpx;" bindtap="filladdress">修改</text> 
+        </view>
+      </view>
+      <view class="info-address">地址：{{address + address_detail}}</view>
+    </view>
+  </view>
+  <view class="address-info" wx:else>
+    <view class="filladdress" bindtap="filladdress">请填写地址</view>
+  </view>
+</view>
+
+<view class="datainfo-box">
+  <view class="datainfo-items">
+    <view class="datainfo-content">
+      <view class="datainfo-cont-left"><image src="{{goods_info.thumb}}"></image></view>
+      <view class="datainfo-cont-right">
+        <view class="cont-right-title">{{goods_info.title}}</view>
+        <view class="cont-right-legend">规格：全部套装</view>
+        <view class="cont-right-price"><text>{{goods_info.energy}}</text></view>
+        <view class="cont-right-number">X1</view>
+      </view>
+    </view>
+    
+    <view>
+      <view class="info-list-box">
+        <view class="info-list-title">所需能量:</view>
+        <view class="info-list-price">{{goods_info.energy}}</view>
+      </view>
+      <view class="info-list-box">
+        <view class="info-list-title">运费:</view>
+        <view class="info-list-price">{{shipping}}</view>
+      </view>  
+      <view class="info-list-box">
+        <view class="info-list-title">实际能量:</view>
+        <view class="info-list-price">{{(goods_info.energy - 0) + (shipping - 0) }}</view>
+      </view>
+      <view class="info-list-box">
+        <view class="info-list-title">留言:</view>
+        <view class="info-list-price info-list-liuyan">
+          <input value="{{remark}}" bindinput="getvalueliuyan" placeholder="请输入留言信息"></input>
+        </view>
+      </view>
+      <view style="width:100%;height:180rpx;"></view>
+    </view>
+
+  </view>
+</view>
+<view class="submit-btn">
+  <view class="btn-left">实际能量： <text style="color:#f94c4e;">{{(goods_info.energy - 0) + (shipping - 0) }}</text> </view>
+  <view class="btn-right" bindtap="btn_submit">提交订单</view>
+</view>
+
+<!-- 引入地址弹窗 -->
+<include src="/pages/module/addressbox/index.wxml" />

@@ -1,0 +1,10 @@
+<block wx:for="{{list_data}}" wx:key="index">
+  <view class="list-box">
+    <view class="images-box"><image src="{{item.thumb}}"></image></view>
+    <view class="list-boc-right">
+      <view class="item-title">{{item.title}}</view>
+      <view style="margin-top:26rpx;">能量：{{item.pay_energy}}</view>
+      <view>数量：{{item.pay_num}}</view>
+    </view>
+  </view>
+</block> 

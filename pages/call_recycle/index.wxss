@@ -1,0 +1,59 @@
+page{
+  background:#f9f9f9;
+  padding: 30rpx 28rpx;
+  box-sizing: border-box;
+}
+.list-box{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  padding: 20rpx 26rpx;
+  background: #fff;
+  margin: 20rpx 0;
+  border-radius: 10px;
+}
+.name-title{
+  font-weight: 600;
+}
+.list-box>input,.list-box>picker{
+  flex: 1;
+  padding: 8rpx;
+}
+.list-way{
+  justify-content: space-between;
+}
+.right-way{
+  display: flex;
+  align-items: center;
+}
+.right-way>view{
+  margin-left: 16rpx;
+  padding: 6rpx 14rpx;
+  font-size: 24rpx;
+  border: 1rpx solid #91908f;
+  border-radius: 20px;
+  color: #91908f;
+}
+.submit-box{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+}
+.submit-btn{
+  border-radius: 8px;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #00E2CE , #008b80);
+}
+.right-way>view.selected-list{
+  border: 1rpx solid #00E2CE;
+  background: #00E2CE;
+  color: #fff;
+}

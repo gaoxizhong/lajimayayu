@@ -1,0 +1,29 @@
+<view class='page'>
+  <view class="mpnavbar">
+    <view class="weui-navbar">
+      <block wx:for="{{tabs}}" wx:key="index">
+        <view class="weui-navbar-item {{chenge == index?'aaa':''}}" data-index="{{index}}" bindtap="getCateShop">{{item.category_name}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="list-items-box">
+    <view class="shop-list-box">
+      <view class="shop-list-items">
+        <block wx:for="{{shop_list}}" wx:key="index">
+          <view class="list-items-list" data-id='{{item.id}}' bindtap="gotolistdetail">
+            <view class="box-items">
+              <view class="list-images">
+                <image src="{{item.thumb}}"/>
+              </view>
+              <view class="list-text">
+                <view class="cool">{{item.title}}</view>
+                <view class="discount">能量:{{item.energy}}</view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <!-- <view v-else>暂无数据</view> -->
+</view>

@@ -1,0 +1,32 @@
+<view class="img-box">
+  <swiper class="swiper"
+    autoplay="true" 
+    previous-margin="48rpx" 
+    next-margin="48rpx" 
+    circular="true" 
+    current="{{current}}" 
+    bindchange="swiperindexchange" 
+    interval="5000" 
+    duration="1000">
+    <block wx:for="{{images}}" wx:for-index="index" wx:key="index" >
+      <swiper-item>
+        <image src="{{item}}" class="slido-image swiper-item {{index == current ? 'bbb':''}}"  mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="detail-box">
+  <view class='title-name'>{{details.title}}</view>
+  <view class='energy'>价格：{{details.energy}}</view>
+  <view style="margin-top: 20rpx;">
+    <view style="font-weight: 600;">详情描述：</view>
+    <view style="font-size: 30rpx;margin-top:20rpx;">{{details.description}}</view>
+  </view>
+</view>
+<view style="width: 100%;height: 150rpx;"></view>
+<view class=" wxbtn-box">
+  <view bindtap="gotorderpage">确认兑换</view>
+</view>
+<!-- 引入登录弹窗 -->
+<include src="/pages/module/loginmark/index.wxml" />

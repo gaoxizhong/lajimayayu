@@ -1,0 +1,24 @@
+<!-- 个人信息弹窗 -->
+<view class="mask" wx:if="{{information}}" bindtap="mask1" catchtouchmove="myCatchTouch"></view>
+<view class="recycle-mark" wx:if="{{information}}" catchtouchmove="myCatchTouch">
+  <view class="items" bindtap="logintest">
+    <text>联系人:</text>
+    <input placeholder='请输入完整姓名' placeholder-style='color:#b2b2b2;' bindinput="contact_name" name="name" value="{{name}}"></input>
+  </view>
+  <view class="items" bindtap="logintest">
+    <text>联系电话:</text>
+    <input placeholder='手机或固话' placeholder-style='color:#b2b2b2;' name="mobile" value="{{mobile}}" bindinput="contact_phone"></input>
+  </view>
+  <view class="items">
+    <text>省市区:</text>
+    <picker mode="region" name="garden" value="{{address}}" start="2015-09-01" bindchange="address">
+      <view class="shengshi">{{address ? address:'请选择省市区'}}</view>
+    </picker>
+  </view>
+  <view class="items" style="align-items:start;" bindtap="logintest">
+    <text>详细地址:</text>
+    <input placeholder='例：**街道**小区**号楼**室' placeholder-style='color:#b2b2b2;font-size:28rpx;' fixed="true" name="address" value="{{address_detail}}" bindinput="address_detail"></input>
+  </view>
+  <view class="queding" hover-class="quedinghove" bindtap="queding">确定</view>
+</view>
+<!-- 个人信息弹窗结束 -->

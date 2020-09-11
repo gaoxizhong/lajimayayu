@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/determined/index",
+    "pages/find/index",
+    "pages/mine/index",
+    "pages/listdetail/index",
+    "pages/orderpage/index",
+    "pages/submit_success/index",
+    "pages/order_list/index",
+    "pages/call_recycle/index",
+    "pages/reserva_success/index",
+    "pages/recycle_order/index",
+    "pages/transfer_points/index"
+
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00E2CE",
+    "navigationBarTitleText": "宇恒工作室",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/index/index",
+      "iconPath": "images/icon_bank.png",
+      "selectedIconPath": "images/icon_bank_sel.png"
+    }, {
+      "text": "待定",
+      "pagePath": "pages/determined/index",
+      "iconPath": "images/icon_cost.png",
+      "selectedIconPath": "images/icon_cost_sel.png"
+    }, {
+      "text": "发现",
+      "pagePath": "pages/find/index",
+      "iconPath": "images/icon_circle.png",
+      "selectedIconPath": "images/icon_circle_sel.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/mine/index",
+      "iconPath": "images/icon_mine.png",
+      "selectedIconPath": "images/icon_mine_sel.png"
+    }]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredBackgroundModes": [
+    "location"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

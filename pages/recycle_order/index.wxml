@@ -1,0 +1,30 @@
+  <view class="mpnavbar">
+    <view class="weui-navbar">
+      <block wx:for="{{tabs}}" wx:key="index">
+        <view class="weui-navbar-item {{chenge == index?'aaa':''}}" data-index="{{index}}" bindtap="getCateShop">{{item.category_name}}</view>
+      </block>
+    </view>
+  </view>
+
+  <view class="mark-false" wx:if="{{mrak == false}}">
+    <block wx:for="{{shop_list}}" wx:key="index">
+      <view class="data-list">
+        <view>姓名: {{item.name}}</view>
+        <view>电话: {{item.mobile}}</view>
+        <view>地址: {{item.address}}</view>
+        <view>预约时间: {{item.reserve_at}}</view>
+        <view class="recycle-type">
+          <text>回收类型:</text>
+          <view class="type-list">
+            <block wx:for="{{item.type}}" wx:key='indx' wx:for-item="items">
+              <view class="list-items" style="color:{{ color[index] }};border:1rpx solid {{color[index]}};">{{items}}</view>
+            </block>
+          </view>
+         </view>
+      </view>
+    </block>
+  </view>
+  <view class="mark-true" wx:else>
+    <image src="/images/icon_success.png" mode="widthFix" class="mark-true-image"></image>
+    <view class="info">暂无信息</view>
+  </view>

@@ -1,0 +1,9 @@
+<view class='image-box'>
+  <image src="/images/icon_success.png" mode="widthFix"></image>
+  <view class="description">恭喜您兑换成功！</view>
+</view>
+
+<view class="gotobtn">
+  <view class="gotohome" bindtap="gotohome">返回首页</view>
+  <view class="gotooder" bindtap="gotooder">查看订单</view>
+</view>

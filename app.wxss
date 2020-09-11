@@ -1,0 +1,114 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.pop-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+}
+.pop-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+}
+.pop-main {
+  width: 560rpx;
+  padding: 20rpx;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20rpx;
+  z-index: 99999;
+}
+.pop-title {
+  font-size: 34rpx;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.pop-content {
+  margin: 20rpx 0 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pop-text-img {
+  color: #333;
+  font-size: 0;
+}
+.pop-text-img text {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  text-align: justify;
+  text-align-last: left;
+}
+.pop-text-img image {
+  width: 100%;
+}
+  
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #999;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  opacity: .8;
+  
+  }
+   
+  .recycle-mark{
+    width: 72%;
+    height: auto;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    z-index:999999;
+    padding: 20rpx 28rpx;
+    border-radius: 12px;
+  }
+  .recycle-mark .items input,.recycle-mark .items textarea,.recycle-mark .items .shengshi{
+    width: 100%;
+    margin: 28rpx 0;
+    padding: 10rpx 0 10rpx 20rpx;
+    font-size: 28rpx;
+    color: #333232;
+    background: #fcfcfc;
+  }
+  .recycle-mark .items textarea{
+    height: 140rpx;
+  }
+  .queding{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20rpx 36rpx;
+    color: #fff;
+    background-image: linear-gradient(to right, #00E2CE , #9bfffa);
+    border-radius: 28px;
+  }
+  .quedinghove{
+    opacity: 0.8;
+  }   
+  
+  

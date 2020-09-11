@@ -1,0 +1,129 @@
+.bg-box{
+  width: 100%;
+  height: 316rpx;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.bg-box .bg-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 316rpx;
+  z-index: -1;
+}
+.bg-box .center-box{
+  padding: 24rpx 30rpx;
+}
+.center-box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+}
+.title-left{
+  display: flex;
+  align-items: center;
+}
+.left-img-box{
+  width: 118rpx;
+  height: 118rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.left-img-box .left-img{
+  width: 118rpx;
+  height: 118rpx;
+}
+.left-title-top{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.right-btn{
+  width: 172rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  text-align: center;
+  background-image: linear-gradient(to right, #fcdd6c,#fe9827);
+  color: #fff;
+  border-radius: 20px;
+}
+.text-bottom{
+  margin-top: 40rpx;
+  padding: 0 26rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+}
+.digital{
+  height:198rpx;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rpx 2rpx 10rpx 6rpx #eaeaea;
+  margin-top: -52rpx;
+}
+.digital>view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bssen-1{
+  padding: 44rpx 36rpx 0 36rpx;
+  border-bottom: 1rpx solid #d2d2d2;
+}
+.bssen-1-list{
+  display: flex;
+  padding: 44rpx 0;
+}
+.bssen-1-list>view.bssen-list-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+}
+.bssen-1-list>view image{
+  width: 57rpx;
+  height: 61rpx;
+}
+.bssen-1-list>view text{
+  padding-top: 12rpx;
+}
+.btn-open{
+  width: 70%;
+  text-align: center;
+  background: #21ff7e;
+  color: #fff;
+}
+.if-member{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.if-member-div{
+  width: 100%;
+}
+.marak-member{
+  width: 72rpx;
+  height: 72rpx;
+  overflow: hidden;
+  position: fixed;
+  bottom: 30%;
+  right: 20rpx;
+  z-index: 100;
+}
+.marak-member>image{
+  width: 100%;
+  height: 100%;
+}

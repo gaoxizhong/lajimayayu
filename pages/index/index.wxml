@@ -1,0 +1,45 @@
+<view>
+  <view class="swiper-container">
+    <swiper class="swiper" autoplay="true" circular="true" interval="5000" duration="1000">
+      <block index="{{index}}" wx:key="key" key="{{key}}" wx:for="{{swiperimg}}" wx:for-index="index" wx:for-item="item">
+        <swiper-item class="swiper-item">
+          <image src="{{item.thumb}}" class="slido-image" mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class="class-box">
+  <image class="img" src="/images/speaker.png" alt=""/>
+  <view class="text">{{text}}</view>
+</view>
+<!--分类模块-->
+<view class="module-box">
+  <view class="module-items">
+    <image src="/images/module_1.png"></image>
+  </view>
+  <view class="module-items" bindtap="gotocallrecycle">
+    <image src="/images/module_1.png"></image>
+  </view>
+  <view class="module-items">
+    <image src="/images/module_1.png"></image>
+  </view>
+</view>
+<view class="shop-list-box">
+  <view class="shop-list-title">标题一</view>
+  <view class="shop-list-items">
+    <block wx:for="{{shop_list}}" wx:key="key">
+      <view class="list-items-list" data-id="{{item.id}}" bindtap="gotolistdetail">
+        <view class="box-items">
+          <view class="list-images">
+            <image src="{{item.thumb}}"/>
+          </view>
+          <view class="list-text">
+            <view class="cool">{{item.title}}</view>
+            <view class="discount">能量:{{item.energy}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
