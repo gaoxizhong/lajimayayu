@@ -26,7 +26,7 @@
   </view>
 </view>
 <view class="shop-list-box">
-  <view class="shop-list-title">标题一</view>
+  <view class="shop-list-title">标题1</view>
   <view class="shop-list-items">
     <block wx:for="{{shop_list}}" wx:key="key">
       <view class="list-items-list" data-id="{{item.id}}" bindtap="gotolistdetail">
