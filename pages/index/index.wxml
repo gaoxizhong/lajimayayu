@@ -10,10 +10,10 @@
   </view>
 </view>
 <view class="class-box">
-  <image class="img" src="/images/speaker.png" alt=""/>
+  <image class="img" src="/images/speaker.png" alt="" />
   <view class="text">{{text}}</view>
 </view>
-<!--分类模块-->
+<!-- 分类模块 -->
 <view class="module-box">
   <view class="module-items">
     <image src="/images/module_1.png"></image>
@@ -32,7 +32,7 @@
       <view class="list-items-list" data-id="{{item.id}}" bindtap="gotolistdetail">
         <view class="box-items">
           <view class="list-images">
-            <image src="{{item.thumb}}"/>
+            <image src="{{item.thumb}}" />
           </view>
           <view class="list-text">
             <view class="cool">{{item.title}}</view>
